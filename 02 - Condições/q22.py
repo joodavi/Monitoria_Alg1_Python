@@ -6,21 +6,19 @@ print('Informe a sigla referente ao estado(Use maiúsculas)')
 estado = str(input('Digite o estado '))
 valorProduto = int(input('Valor de entrada: '))
 
-if (estado == 'MG'):
+if (estado.upper() == 'MG'):
 	print('Estado selecionado: Minas Gerais')
 	valorProduto += (valorProduto*0.07)
 	print(valorProduto)
-elif (estado == 'SP'):
+elif (estado.upper() == 'SP'):
 	print('Esdado selecionado: São Paulo')
 	valorProduto += (valorProduto*0.12)
 	print(valorProduto)
-elif (estado == 'RJ'):
+elif (estado.upper() == 'RJ'):
 	print('Esdado selecionado: Rio de Janeiro')
 	valorProduto += (valorProduto*0.15)
 	print(valorProduto)
-elif (estado == 'MS'):
+elif (estado.upper() == 'MS'):
 	print('Esdado selecionado: Mato Grosso do Sul')
 	valorProduto += (valorProduto*0.08)
 	print(valorProduto)
-else:
-	print('Estado não cadastrado ou você não usou maiúsculas')
